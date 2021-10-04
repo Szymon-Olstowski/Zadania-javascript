@@ -1,0 +1,28 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <div style="color:green;font-size:31px;">
+        <script type="text/javascript">
+            var D1_ols=prompt("dzień 1=","");
+            var D2_ols=prompt("dzień 2=","");
+            var G1_ols=prompt("godzina 1=","");
+            var G2_ols=prompt("godzina 2=","");
+            var a=parseFloat(D1_ols);
+            var b=parseFloat(D2_ols);
+            var a_g=parseFloat(G1_ols);
+            var b_g=parseFloat(G2_ols);
+            suma=D1_ols-D2_ols;
+            suma_g=G1_ols-G2_ols;
+            var suma;
+            var suma_g;
+            wynik=86400*suma
+            wynik_g=3600*suma_g
+            var wynik;
+            var wynik_g;
+            document.write("dzien"+ D1_ols+" - "+D2_ols+" = "+suma+ "dni" +"<br>"+ "Ilość sekund wynosi: "+wynik+"<br>");
+            document.write("godzina"+ G1_ols+" - "+G2_ols+" = "+suma_g+ "godzin" +"<br>"+ "Ilość sekund wynosi: "+wynik_g);
+            </script>
+        </div>
+    </body>
+</html>
