@@ -1,7 +1,18 @@
 <html>
     <head>
+        
     </head>
     <body>
-        Temat: Rozkład ułamka egipskiego na dwa takie same ułamki egipskie.
+        <div style="color:grey;font-size:31px;">
+            <script type="text/javascript">
+                var liczba1=prompt("Podaj pierwszą liczbę=","");
+                var liczba2=prompt("Podaj drugą liczbę=","");
+                var suma;
+                var a=parseFloat(liczba1);
+                var b=parseFloat(liczba2);
+                suma=a*a*a + 3*a*a*b + 3*a*b*b + b*b*b;
+                document.write("("+a+" + "+b+")^3 = "+a+"^3 + "+ "3*(("+a+")^2)*("+b+") + 3*("+a+")*(("+b+")^2) + "+b+"^3 = "+a*a*a+" + "+3*((a*a)*b)+" + "+3*(a)*((b*b))+" + "+b*b*b+" = "+suma );
+            </script>
+        </div>
     </body>
 </html>

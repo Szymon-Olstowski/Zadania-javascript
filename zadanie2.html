@@ -1,0 +1,27 @@
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <div style="color:blue;font-size:31px;">
+            <script type="text/javascript">
+                var no_ols=prompt("Podaj ilośc sztuk atomów=","");
+                var t_ols=prompt("Podaj czas rozpaddu pierwiastka=","");
+                var t1d2_ols=prompt("Podaj okres połowicznego zaniku=","");
+                var no=parseFloat(no_ols);
+                var t=parseFloat(t_ols);
+                var t1d2=parseFloat(t1d2_ols);
+                var lambda;
+                lambda=(Math.log(2)/t1d2).toFixed(7);
+                var n;
+                n=(no*Math.pow(Math.E,-lambda*t)).toFixed(7);
+                document.write("N0="+no+"[sztuk]"+"<br>");
+                document.write("t="+t+"[lat]"+"<br>");
+                document.write("t1/2="+t1d2+"[lat]"+"<br>");
+                document.write("Lambda="+lambda+"[1/rok]"+"<br>");
+                document.write("N="+n+"[sztuk]"+"<br>");
+            </script>
+        </div>
+
+    </body>
+</html>
