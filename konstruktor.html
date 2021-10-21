@@ -1,0 +1,34 @@
+<html>
+<head>
+</head>
+<body>
+    <script type="text/javascript">
+        function auto(nazwa,kraj,rok,silnik,dlugosc,szerokosc,wysokosc,masa,predkosc,zasieg)
+        {
+            this.nazwa=nazwa;
+            this.kraj=kraj;
+            this.rok=rok;
+            this.silnik=silnik;
+            this.dlugosc=dlugosc;
+            this.szerokosc=szerokosc;
+            this.wysokosc=wysokosc;
+            this.masa=masa;
+            this.predkosc=predkosc;
+            this.zasieg=zasieg;
+        }
+        bomba= new auto("TT-55","Polska",1958,"12-cylindrowy W-55 o mocy 580 KM","9m","3,27m","2,35m","36 500 kg ","50km/h","500km");
+        usa= new auto("TT-28","Stany Zjednoczone",1945,"1 silnik spalinowy widlasty, 8-cylindrowy Ford GAF V-8 o mocy 410 KM (305 kW)","11,10 m","4,39 m","2,84 m","32 500 kg","14km/h","160km");
+        rudy= new auto("T-34","ZSRR","1937","12-cylindrowy, wysokoprężny, czterosuwowy, widlasty model W-2 o mocy 500 KM","6,68m","3m","2,45 m","26,5 tony","53km/h","300km");
+        t72= new auto("TT-72","ZSRR",1973,"1 silnik wysokoprężny, 12-cylindrowy W-46 o mocy 780 KM (574 kW) przy 2000 obr./min.","9,53m","3,72m","2,19m","41 000 kg ","60km/h","600km");
+        bialy= new auto("TT-54","ZSRR",1956-1964,"1 silnik wysokoprężny, 12-cylindrowy W-54 o mocy 520 KM przy 2000 obr./min","9m","3,27m","2,75m","36 000 kg ","50km/h","440km");
+        leo= new auto("Leopard 2PL","Polska, Niemcy",2019,"MTU-MB 873 Ka 501 o mocy 1500 KM","9,67m","3,75m","3,05m","59,2 t ","68km/h","500km");
+        document.write("Nazwa"+bomba.nazwa+" kraj: "+bomba.kraj+" rok: "+bomba.rok+ " silnik: "+bomba.silnik+" dlugość: "+bomba.dlugosc+" szerokosc: "+bomba.szerokosc+" wysokość: "+bomba.wysokosc+" masa: "+bomba.masa+" prędkość: "+bomba.predkosc+" zasięg: "+bomba.zasieg+"<br>");
+        document.write("Nazwa: "+usa.nazwa+" kraj: "+usa.kraj+" rok: "+usa.rok+" silnik: "+usa.silnik+" długość: "+usa.dlugosc+" szerokosc: "+usa.szerokosc+" wyskokość: "+usa.wysokosc+ " masa: " +usa.masa+"prędkość: "+usa.predkosc+" zasięg:"+usa.zasieg+"<br>");
+        document.write("Nazwa: "+rudy.nazwa+" kraj: "+rudy.kraj+" rok: "+rudy.rok+" silnik: "+rudy.silnik+" długość: "+rudy.dlugosc+" szerokosc: "+rudy.szerokosc+" wyskokość: "+rudy.wysokosc+ " masa: " +rudy.masa+"prędkość: "+rudy.predkosc+" zasięg:"+rudy.zasieg+"<br>");
+        document.write("Nazwa: "+t72.nazwa+" kraj: "+t72.kraj+" rok: "+t72.rok+" silnik: "+t72.silnik+" długość: "+t72.dlugosc+" szerokosc: "+t72.szerokosc+" wyskokość: "+t72.wysokosc+ " masa: " +t72.masa+"prędkość: "+t72.predkosc+" zasięg:"+t72.zasieg+"<br>");
+        document.write("Nazwa: "+bialy.nazwa+" kraj: "+bialy.kraj+" rok: "+bialy.rok+" silnik: "+bialy.silnik+" długość: "+bialy.dlugosc+" szerokosc: "+bialy.szerokosc+" wyskokość: "+bialy.wysokosc+ " masa: " +bialy.masa+"prędkość: "+bialy.predkosc+" zasięg:"+bialy.zasieg+"<br>");
+        document.write("Nazwa: "+leo.nazwa+" kraj: "+leo.kraj+" rok: "+leo.rok+" silnik: "+leo.silnik+" długość: "+leo.dlugosc+" szerokosc: "+leo.szerokosc+" wyskokość: "+leo.wysokosc+ " masa: " +leo.masa+"prędkość: "+leo.predkosc+" zasięg:"+leo.zasieg+"<br>");
+        </script>
+        
+</body>
+</html>
