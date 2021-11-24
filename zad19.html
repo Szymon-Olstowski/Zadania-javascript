@@ -1,0 +1,49 @@
+<html> 
+<head> 
+<title>
+ Przykład obliczenia pola i obwodu prostokąta
+</title>
+ <script language="JavaScript">
+function pole_olstowski(a,b)
+{
+ a_ols=parseFloat(a)
+ b_ols=parseFloat(b)
+ V_wynik=a*b
+ document.getElementsByName('pole')[0].value=V_wynik.toFixed(2); /* na dokument */
+ pokaz1.innerHTML="Pole="+V_wynik.toFixed(2);  /* do tabeli */
+}
+function obw_olstowski(a1,b1)
+{
+ a_ols=parseFloat(a1)
+ b_ols=parseFloat(b1)
+ Pc_wynik=2*a1+2*b1;
+ document.getElementsByName('obw')[0].value=Pc_wynik.toFixed(2);
+ pokaz2.innerHTML="Obwód="+Pc_wynik.toFixed(2)+"";
+}
+ </script>
+</head> 
+<body> 
+Obliczanie pola i obwodu prostokąta
+<br> <br>
+<form name="formularz" action="..." onsubmit="pole_olstowski(this.szerokosc.value,this.wysokosc.value); 
+obw_olstowski(this.szerokosc.value,this.wysokosc.value);return false"> 
+Podaj a=
+<input size="6" name="szerokosc">
+Podaj b=
+<input size="6" name="wysokosc">
+<br>
+<br>
+<input TYPE="submit" Value="oblicz" >
+<br>
+<br>
+Pole
+<input size="6" name="pole">
+Obwód
+<input size="6" name="obw">
+</form>
+<table>
+<tr id="pokaz1"></tr>
+<tr id="pokaz2"></tr>
+</table>
+</body> 
+</html>

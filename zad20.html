@@ -1,0 +1,59 @@
+<html> 
+<head> 
+<title>
+ Przykład obliczenia V i Pc walca
+</title>
+ <script language="JavaScript">
+function pow_olstowski(a,b,h)
+{
+ a_ols=parseFloat(math.abs(a))
+ b_ols=parseFloat(math.abs(b))
+ h_ols=parseFloat(h)
+ wynik_c=pow(b,2)+pow(a-b/2,2)+pow(x,2)
+
+ V_pole=1/2*(a+b)*h;
+ document.getElementsByName('pole')[0].value=V_pole.toFixed(2); /* na dokument */
+ pokaz1.innerHTML="Pole="+V_pole.toFixed(2);  /* do tabeli */
+}
+function obw_olstowski(a1,b1,h1)
+{
+ a_ols=parseFloat(a1)
+ b_ols=parseFloat(b1)
+ h_ols=parseFloat(h1)
+ c_ols=parseFloat(c1)
+ Pc_wynik=a1+b1+2*c1;
+ document.getElementsByName('obw')[0].value=Pc_wynik.toFixed(2);
+ pokaz2.innerHTML="Obwód="+Pc_wynik.toFixed(2)+"";
+}
+ </script>
+</head> 
+<body> 
+Obliczanie pola i obwódu trapezu
+<br> <br>
+<form name="formularz" action="..." onsubmit="pow_olstowski(this.podstawa1.value,this.podstawa2.value,this.wysokosc.value); 
+obw_olstowski(this.podstawa1.value,this.podstawa2.value,this.wysokosc.value);return false"> 
+Podaj a=
+<input size="6" name="podstawa1">
+Podaj b=
+<input size="6" name="podatwa2">
+Podaj h=
+<input size="6" name="wysokosc">
+<br>
+<br>
+<input TYPE="submit" Value="oblicz" >
+<br>
+<br>
+Przękątna
+<input size="6" name="przekatna">
+Pole
+<input size="6" name="pole">
+Obwód
+<input size="6" name="obw">
+
+</form>
+<table>
+<tr id="pokaz1"></tr>
+<tr id="pokaz2"></tr>
+</table>
+</body> 
+</html>
