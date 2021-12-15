@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <script language="JavaScript">
+            function user(login,haslo,e_mail){
+                this.login=login;
+                this.haslo=haslo;
+                this.e_mail=e_mail
+            }
+            osoba1 = new user("uczen","zaq1@WSX","uczen@wp.pl"); 
+            function folurmularz(login1,haslo1){
+                let login = login1
+                let haslo = haslo1
+        
+                if(osoba1.login==login && osoba1.haslo==haslo){
+                    document.open();
+                    document.write("Udano");
+                    document.close();
+                }
+                else{
+                    document.open();
+                    document.write("błąd");
+                    document.close();
+                }
+            }
+            
+        </script>
+    </head>
+    <body>
+        <form name="formularz" action="..." onsubmit="folurmularz(this.login1.value,this.haslo1.value);">
+            Podaj login=
+            <input size="10" name="login1">
+            Podaj haslo=
+            <input size="10" name="haslo1">
+            <input TYPE="submit" Value="wyślij" >
+        </form>
+    </body>
+</html>
