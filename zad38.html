@@ -1,0 +1,86 @@
+<html>
+    <head>
+    </head>
+    <body>
+<B>Obiekt location</B>
+<br>
+Obiekt ten zawiera informacje o bieżącym adresie URL. Jego właściwości odpowiadają kolejnym
+członom adresu.
+<br>
+<U>Ogólna postać lokalizatora</U> URL to:
+<br>
+protocol://host:port/path#fragment?query
+<br>
+<B>Właściwości obiektu location</B>
+<br>
+<u>protocol</u> →to łańcuch znakowy określający protokół, zgodnie z którym
+należy nawiązać łączność z podanym serwerem (np. http:, ftp:, file:),
+<br>
+<u>host</u> → to łańcuch znakowy określający nazwę serwera z bieżącego adresu, port
+to łańcuch znakowy odpowiadający portowi, przez który należy połączyć się z serwerem,
+<br>
+<u>pathname</u> →to łańcuch znakowy określający ścieżkę dostępu do dokumentu na serwerze,
+<br>
+<u>hash</u> → to łańcuch znakowy odpowiadający nazwie zakotwiczenia (przypisanie tu jakiejś wartości
+spowoduje przewinięcie dokumentu do wskazanego punktu),
+<br>
+<u>serach</u>→ to człon lokalizatora URL
+<br>
+Metody obiektu location
+<br>
+<ul>
+    <ol>
+        <li>
+        <U>Metoda assign</U>
+            <br>
+            Wywołanie: location.assign(url)
+            <br>
+            Metoda assign wczytuje dokument o adresie wskazanym przez argument url
+        </li>
+        <li>
+            <U>Metoda reload</U>
+            <br>
+            Wywołanie: location.reload(force)
+            <br>
+            Metoda reload wymusza ponowne wczytanie bieżącej strony. Jeśli obecny jest argument force i ma
+            on wartość true, wymusza to ponowne wczytanie zawartości witryny z serwera. W pozostałych
+            przypadkach przeglądarka może wczytać ją z pamięci cache.  
+        </li>
+        <li>
+            <u>Metoda replace</u>
+            <br>
+            Wywołanie: location.replace(url)
+            <br>
+            Metoda replace zastępuje bieżący dokument przez wczytany spod adresu wskazanego przez
+            argument url. 
+            <br>
+            <u>Różnica między assign a repleace</u>
+            <br>
+            W przeciwieństwie do metody assign, po zastosowaniu replace bieżąca strona nie zostanie zapisana
+            w historii przeglądanych witryn, nie będzie więc można się do niej ponownie odwołać poprzez
+            wciśnięcie przycisku Wstecz bądź też wywołanie history.go(-1).
+            Tę metodę można wykorzystać np. w sytuacji, kiedy witryna została przeniesiona pod inny adres, a
+            pod starym ma być umieszczona stosowna informacja oraz automatyczne przekierowanie
+            użytkownika (po zadanym czasie). 
+        </li>
+        <li>
+            <u>Metoda toString</u>
+            <br>
+            Wywołanie: location.toString()
+            <br>
+            Metoda toString przekształca zawartość obiektu location w ciąg znaków reprezentujący
+            przechowywany przezeń adres URL.
+            <br>
+            <ol>
+                <li>window.location.href →przechowuje pełny adres</li>
+                <li>window.location.hostname →wyłącznie domenę</li>
+                <li>window.location.reload() → odświeża stronę</li>
+                <li>window.location.assign() → przechodzi na podany adres,</li>
+                <li>window.location.replace() → przechodzi na podany adres i nie tworzy nowego wpisu w
+                    historii przeglądania.</li>
+            </ol>
+        </li>
+    </ol>
+</ul>
+    </body>
+</html>
