@@ -1,0 +1,42 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="pl">
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ <meta http-equiv="Content-Script-Type" content="text/javascript">
+ <title>Moja strona WWW</title>
+ <script type="text/javascript">
+ function CKE()
+ {
+    setTimeout("CKE();", 4000);
+    window.location.replace("https://cke.gov.pl/");
+ }
+ function GDAŃSK()
+ {
+    setTimeout("GDANSK();", 6000);
+    window.location.replace("https://www.gdansk.pl/");
+ }
+ function ZSE()
+ {
+    setTimeout("ZSE();", 10000);
+    window.location.replace("https://zse.edu.gdansk.pl/");
+ }
+ function RESET(){
+    setTimeout(8000);
+    window.location.reload(true);
+
+ }
+ </script>
+</head>
+<body>
+<form>
+    <input type="button" name="przycisk1" value="Szymon-strona CKE" onclick="CKE(' ')">
+    <input type="button" name="przycisk2" value="Szymon-strona GDAŃSK" onclick="GDAŃSK(' ')">
+    <input type="button" name="przycisk3" value="Szymon-strona ZSE" onclick="ZSE(' ')">
+    <input type="button" name="przycisk3" value="Szymon-strona RESET" onclick="RESET(' ')">
+
+    
+
+</form>
+ 
+</body>
+</html>
