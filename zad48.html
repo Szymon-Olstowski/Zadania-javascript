@@ -1,0 +1,91 @@
+Zadanie na praktyczne na 
+<ul>
+<li> String — łańcuch tekstowy. Posiada własność length i metody: slice(), split().</li>
+<li>Obiekt String</li>
+<li>Obiektem zawsze występującym w języku JavaScript jest obiekt String. Posiada on jedną 
+</li>właściwość,
+length, określającą długość łańcucha.</li>
+<li>Przykład</li>
+<textarea>
+tekst = "Obiekty języka JavaScript"
+dl = tekst.length
+</textarea>
+<li>Zmiennej dl przypisana zostanie wartość 25, określająca długość tekstu.</li>
+<li>Obiekt String posiada dwa typy metod.</li>
+</li>Typ1</li>
+<li>metoda substring(), która zwraca podzbiór tego łańcucha. Jej parametry określają 
+położenie początku i końca podzbioru.</li>
+<li>Przykład</li>
+<textarea>
+x = tekst.substring (15,19)
+</textarea>
+<li>Zostanie zwrócony łańcuch Java.</li>
+<li>Typ2</li>
+<li>Metoda toUpperCase() zamienia wszystkie litery ciągu na duże,</li> 
+<li>Metoda toLowerCase() zamienia wszystkie litery ciągu na małe.</li>
+<textarea>
+• Przykład
+tekst = "Obiekty języka JavaScript"
+x = tekst.toLowerCase()
+</textarena>
+/*Zostanie zwrócony łańcuch obiekty języka javascript */
+<li>Przykład</li>
+<textarea>
+tekst = "Obiekty języka JavaScript"
+x = tekst.toUpperCase()
+</textarea>
+/*Zostanie zwrócony łańcuch OBIEKTY JĘZYKA JAVASCRIPT*/
+<li>Przykład</li>
+<li>Temat: Jak wykonać aby pierwsza litera ciągu znaków była pisana dużą literą.</li>
+<li>Wykonanie:</li>
+<li>Do istniejących obiektów można dodawać nowe właściwości i można definiować dla nich 
+nowe metody. Do obiektu String dodamy dodatkową funkcjonalność, dzięki której pierwsza 
+litera </li>
+<li>lłańcucha będzie pisana dużą literą.
+<li>String.prototype.duzaLitera = function() { return this.charAt(0).toUpperCase() + this.substr(1);}
+<li>Opis działania zdefiniowanej powyżej metody
+<li>Metoda charAt() zwraca znak z pierwszej pozycji łańcucha znaków. Metoda substr() zwraca 
+podzbiór łańcucha znaków. Jako parametr tej metody został podany indeks pierwszego 
+znaku podzbioru. Zadeklarowana metoda została dołączona do obiektu String i od tej 
+pory każdy nowy tekst będzie posiadał metodę, która zamieni jego pierwszą literę na dużą.</li>
+<li>Przykład</li>
+<li>Temat: Zamiana pierwszej litery na dużą.</li>
+<textarea>
+var tx1 = 'komputer';
+document.write(tx1.duzaLitera())
+</textarea>
+<li>W wyniku wykonania skryptu wyświetli się tekst 'Komputer'.</li>
+<li>Obiekt Date</li>
+<li>Obiekt specjalny Date, który służy do przechowywania wartości daty i czasu. Przy jego 
+pomocy można odczytać wartość daty i czasu, można też rozłożyć te wartości na części, 
+odczytując oddzielnie dzień, miesiąc, rok itp. Można również te części niezależnie 
+modyfikować.</li>
+<li>Przykład</li>
+<li>Temat: Odczytanie bieżącej datę i czas do zmiennej dat_cz.</li>
+<textarea>
+var dat_cz = new Date();
+</textarena>
+<li>Przykład</li>
+<li>Temat:Utworzenie obiektu, który będzie zawierał ściśle określoną wartość daty i godziny.</li>
+<textarea>
+var data = new Date(2018,2,27);
+</textarea>
+<li>Opis:</li>
+<li>Można utworzyć obiekt z określoną liczbą parametrów. Tych parametrów może być od 
+dwóch do siedmiu (rok, miesiąc, dzień, godzina, minuty, sekundy, milisekundy).</li>
+<li>W języku JavaScript wartości daty i czasu są przechowywane w formacie timestamp, czyli 
+jako liczba milisekund, które upłynęły od północy 1 stycznia 1970 roku.</li>
+<li>Do konwersji obiektu Date na tekst służy kilka funkcji:</li>
+<li>toString() — zwraca datę, czas oraz informacje o strefie czasowej w języku 
+angielskim,</li>
+<li>toLocaleString() — zwraca datę i czas dla bieżących ustawień regionalnych,</li>
+<li>toUTCString()— zwraca datę, czas oraz informacje o strefie czasowej dla formatu </li>
+<li>UTC (Universal Coordinated Time),</li>
+<li>toGMTString()— działa jak funkcja toUTCString(),</li>
+<li>toDateString()— zwraca tylko datę w języku angielskim,</li>
+<li>toLocaleDateString() — zwraca tylko datę dla bieżących ustawień regionalnych,</li>
+<li>toTimeString()— zwraca tylko czas w języku angielskim,</li>
+<li>toLocaleTimeString()— zwraca tylko czas dla bieżących ustawień regionalnych.</li>
+<li>UWAGA</li>
+<li>Dla metod toString() i toLocaleString() różne przeglądarki zwracają wyniki w różny sposób.</li>
+</ul>
