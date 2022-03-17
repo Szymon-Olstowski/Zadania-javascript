@@ -3,9 +3,9 @@
 <script type="text/javascript">
 function logowanie(dane) 
 {
- if(dane.haslo.value=="k")
+ if(dane.login.value=="k"&dane.haslo.value=="k")
  {
-    window.location.replace("działa");
+ window.location.replace("obliczenia.html");
  }
  else
  {
@@ -16,8 +16,9 @@ function logowanie(dane)
 </head>
 <body>
  <form name="formularz">
+Login: <input type="text" name="login"/><br><br>
 Hasło: <input type="password" name="haslo"/><br><br>
-<input type="submit" value="Logowanie..." onClick="logowanie()"/><br><br>
+<input type="button" value="Logowanie..." onClick="logowanie(this.form)"/><br><br>
  </form>
 </body>
-</html>
+</html
